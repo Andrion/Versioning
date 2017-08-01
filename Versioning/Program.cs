@@ -9,6 +9,8 @@
             Console.WriteLine("v1.0.0");
 
             Console.WriteLine("feature 1");
+
+            Console.WriteLine("feature 2");
         }
     }
 }
