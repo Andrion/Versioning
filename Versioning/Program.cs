@@ -6,12 +6,9 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("release 1.1.0");
+            Console.WriteLine("release 1.2.0");
 
-            Console.WriteLine("feature 3");
-            Console.WriteLine("feature 4");
-
-            Console.WriteLine("1.2.0 - new feature");
+            Console.WriteLine("feature 6");
         }
     }
 }
