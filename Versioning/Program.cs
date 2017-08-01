@@ -10,7 +10,7 @@
             
             Console.WriteLine("version 1.3.0");
 
-            Console.WriteLine("feature 6");
+            Console.WriteLine("feature 7");
         }
     }
 }
