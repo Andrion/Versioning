@@ -60,6 +60,13 @@
     </PropertyGroup>
     <Error Condition="!Exists('..\packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\GitVersionTask.3.6.5\build\dotnet\GitVersionTask.targets'))" />
   </Target>
+  
+  <ItemGroup>
+    <VerFile Include="version.txt" />
+  </ItemGroup>
+  <Target Name="WriteVersion" AfterTargets="GetVersion">
+    <WriteLinesToFile File="@(VerFile)" Lines="$(GitVersion_Major).$(GitVersion_Minor).$(GitVersion_Patch)" Overwrite="true" Encoding="Unicode" />
+  </Target>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
